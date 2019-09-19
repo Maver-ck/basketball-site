@@ -12,7 +12,7 @@ function App() {
         Starting Lineup
         <Row>
           <Column>
-            <div>Center</div>
+            <div>Centerrr</div>
             <div className="name">Ivica Zubac</div>
             <img src={ivica} alt="Logo" />
           </Column>
