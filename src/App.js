@@ -1,20 +1,27 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
+import ivica from "./72148.png";
+import { Column, Row } from "simple-flexbox";
 
 function App() {
   return (
     <div className="App">
       <h1>Basket Ball</h1>
       <h2>LA Clippers</h2>
-      <>
-        <h3>Starting Lineup</h3>
-        <div>Center</div>
-        <div>Point Guard</div>
-        <div>Shooting Guard</div>
-        <div>Power Forward</div>
-        <div>Small forward</div>
-      </>
+      <div>
+        Starting Lineup
+        <Row>
+          <Column>
+            <div>Center</div>
+            <div className="name">Ivica Zubac</div>
+            <img src={ivica} alt="Logo" />
+          </Column>
+          <Column>Point Guard</Column>
+          <Column>Shooting Guard</Column>
+          <Column>Power Forward</Column>
+          <Column>Small forward</Column>
+        </Row>
+      </div>
     </div>
   );
 }
