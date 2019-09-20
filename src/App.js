@@ -11,9 +11,18 @@ const PlayerCardColumn = props => (
   <Column>
     <div>{props.playerPosition}</div>
     <div>{props.playerName}</div>
-    <img style={{ alignSelf: "center" }} src={props.playerImage} alt="Logo" />
+    <img
+      style={{ alignSelf: "center" }}
+      src={props.playerImage}
+      alt="Logo"
+      onClick={() => props.onClick(props.playerName)}
+    />
   </Column>
 );
+
+const onPlayerClick = playerName => {
+  console.log(playerName);
+};
 
 function App() {
   return (
@@ -27,26 +36,31 @@ function App() {
             playerPosition="Center"
             playerName="Ivica Zubac"
             playerImage={ivica}
+            onClick={onPlayerClick}
           ></PlayerCardColumn>
           <PlayerCardColumn
             playerPosition="Point Guard"
             playerName="Patrick Beverley"
             playerImage={bev}
+            onClick={onPlayerClick}
           ></PlayerCardColumn>
           <PlayerCardColumn
             playerPosition="Shooting Guard"
             playerName="Paul George"
             playerImage={pg}
+            onClick={onPlayerClick}
           ></PlayerCardColumn>
           <PlayerCardColumn
             playerPosition="Power Forward"
             playerName="Montrezl Harrell"
             playerImage={montrezl}
+            onClick={onPlayerClick}
           ></PlayerCardColumn>
           <PlayerCardColumn
             playerPosition="Small Forward"
             playerName="Kawhi Leonard"
             playerImage={kawhi}
+            onClick={onPlayerClick}
           ></PlayerCardColumn>
         </Row>
       </div>
