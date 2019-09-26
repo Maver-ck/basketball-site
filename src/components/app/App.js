@@ -1,10 +1,10 @@
 import React from "react";
 import "./App.css";
-import ivica from "./72148.png";
-import montrezl from "./montrezl.png";
-import kawhi from "./kawhi.png";
-import pg from "./pg.png";
-import bev from "./bev.png";
+import ivica from "../../72148.png";
+import montrezl from "../../montrezl.png";
+import kawhi from "../../kawhi.png";
+import pg from "../../pg.png";
+import bev from "../../bev.png";
 import { Column, Row } from "simple-flexbox";
 
 const PlayerCardColumn = props => (

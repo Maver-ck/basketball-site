@@ -14,7 +14,7 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "test": "jest"
+    "test": "react-scripts test"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -32,8 +32,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.1.1",
-    "jest": "^24.9.0"
+    "gh-pages": "^2.1.1"
   },
   "homepage": "http://Maver-ck.github.io/basketball-site"
 }
