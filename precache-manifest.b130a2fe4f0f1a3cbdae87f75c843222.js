@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e9bce994d9c41068af86e7a7955bf842",
+    "revision": "bec152a904bc73a80f3d5ecb5a95b382",
     "url": "/basketball-site/index.html"
   },
   {
-    "revision": "1905561a179c0ed73255",
+    "revision": "5058fbc2b62d36de1558",
     "url": "/basketball-site/static/css/main.ba49ec77.chunk.css"
   },
   {
-    "revision": "72ee39dcbc63f55fc1c5",
-    "url": "/basketball-site/static/js/2.5b63e2ca.chunk.js"
+    "revision": "739ba60f10813590500c",
+    "url": "/basketball-site/static/js/2.69620eaa.chunk.js"
   },
   {
-    "revision": "1905561a179c0ed73255",
-    "url": "/basketball-site/static/js/main.13724b0d.chunk.js"
+    "revision": "5058fbc2b62d36de1558",
+    "url": "/basketball-site/static/js/main.3f9f9e77.chunk.js"
   },
   {
     "revision": "aec973d39f9c47e5c6aa",
