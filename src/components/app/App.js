@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import { Row } from "simple-flexbox";
-import { PlayerCardColumn } from "./PlayerCardColumn";
+import { PlayerCardColumn } from "../PlayerCardColumn";
 import ivicaInfo from "../../assets/objects/clippers/ivica";
 import team from "../../assets/objects/";
 
