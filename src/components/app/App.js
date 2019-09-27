@@ -1,13 +1,9 @@
 import React, { useState } from "react";
 import "./App.css";
-import ivica from "../../assets/images/ivica.png";
-import montrezl from "../../assets/images/montrezl.png";
-import kawhi from "../../assets/images/kawhi.png";
-import pg from "../../assets/images/pg.png";
-import bev from "../../assets/images/bev.png";
 import { Row } from "simple-flexbox";
 import { PlayerCardColumn } from "./PlayerCardColumn";
 import ivicaInfo from "../../assets/objects/clippers/ivica";
+import team from "../../assets/objects/";
 
 const onPlayerClick = playerName => {
   console.log(playerName);
@@ -15,6 +11,7 @@ const onPlayerClick = playerName => {
 
 function App() {
   const [playerInfo, setPlayerInfo] = useState(ivicaInfo);
+
   console.log(playerInfo);
   return (
     <div className="App">
@@ -23,37 +20,18 @@ function App() {
       <div>
         Starting Lineup
         <Row style={{ justifyContent: "center" }}>
-          <PlayerCardColumn
-            playerPosition="Center"
-            playerName={playerInfo.name}
-            playerImage={ivica}
-            onClick={onPlayerClick}
-            playerDesciption={playerInfo.description}
-          ></PlayerCardColumn>
-          <PlayerCardColumn
-            playerPosition="Point Guard"
-            playerName="Patrick Beverley"
-            playerImage={bev}
-            onClick={onPlayerClick}
-          ></PlayerCardColumn>
-          <PlayerCardColumn
-            playerPosition="Shooting Guard"
-            playerName="Paul George"
-            playerImage={pg}
-            onClick={onPlayerClick}
-          ></PlayerCardColumn>
-          <PlayerCardColumn
-            playerPosition="Power Forward"
-            playerName="Montrezl Harrell"
-            playerImage={montrezl}
-            onClick={onPlayerClick}
-          ></PlayerCardColumn>
-          <PlayerCardColumn
-            playerPosition="Small Forward"
-            playerName="Kawhi Leonard"
-            playerImage={kawhi}
-            onClick={onPlayerClick}
-          ></PlayerCardColumn>
+          {team.map(player => {
+            const playerImage = require(`../../assets/images/${player.ref}.png`);
+            return (
+              <PlayerCardColumn
+                playerPosition={player.position}
+                playerName={player.name}
+                playerImage={playerImage}
+                onPlayerClick={onPlayerClick}
+                playerDesciption={player.description}
+              ></PlayerCardColumn>
+            );
+          })}
         </Row>
       </div>
     </div>
