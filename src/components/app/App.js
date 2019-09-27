@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import ivica from "../../assets/images/ivica.png";
 import montrezl from "../../assets/images/montrezl.png";
@@ -7,12 +7,15 @@ import pg from "../../assets/images/pg.png";
 import bev from "../../assets/images/bev.png";
 import { Row } from "simple-flexbox";
 import { PlayerCardColumn } from "./PlayerCardColumn";
+import ivicaInfo from "../../assets/objects/clippers/ivica";
 
 const onPlayerClick = playerName => {
   console.log(playerName);
 };
 
 function App() {
+  const [playerInfo, setPlayerInfo] = useState(ivicaInfo);
+  console.log(playerInfo);
   return (
     <div className="App">
       <h1>Basket Ball</h1>
@@ -22,9 +25,10 @@ function App() {
         <Row style={{ justifyContent: "center" }}>
           <PlayerCardColumn
             playerPosition="Center"
-            playerName="Ivica Zubac"
+            playerName={playerInfo.name}
             playerImage={ivica}
             onClick={onPlayerClick}
+            playerDesciption={playerInfo.description}
           ></PlayerCardColumn>
           <PlayerCardColumn
             playerPosition="Point Guard"

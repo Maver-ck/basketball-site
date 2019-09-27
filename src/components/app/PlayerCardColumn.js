@@ -13,8 +13,8 @@ export const PlayerCardColumn = props => {
         alt="Logo"
         onClick={() => props.onClick(props.playerName)}
       />
-      <div id="myDiv" style={{ display: playerExpanded ? "block" : "none" }}>
-        Some text about the player
+      <div style={{ display: playerExpanded ? "block" : "none" }}>
+        {props.playerDesciption}
       </div>
       <button onClick={() => setPlayerExpanded(!playerExpanded)}>Expand</button>
     </Column>
