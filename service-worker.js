@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/basketball-site/precache-manifest.b130a2fe4f0f1a3cbdae87f75c843222.js"
+  "/basketball-site/precache-manifest.4430a23e959f549d5710e0286d476b25.js"
 );
 
 self.addEventListener('message', (event) => {
