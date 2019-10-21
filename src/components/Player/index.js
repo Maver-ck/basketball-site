@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Column } from "simple-flexbox";
 
-export const PlayerCardColumn = props => {
+const Player = props => {
   const [playerExpanded, setPlayerExpanded] = useState(false);
   return (
     <Column>
@@ -14,9 +14,13 @@ export const PlayerCardColumn = props => {
         onClick={() => props.onClick(props.playerName)}
       />
       <div style={{ display: playerExpanded ? "block" : "none" }}>
-        {props.playerDesciption}
+        <div>Age: {props.playerAge}</div>
+        <div>Height: {props.playerHeight}</div>
+        <div>{props.playerDesciption}</div>
       </div>
       <button onClick={() => setPlayerExpanded(!playerExpanded)}>Expand</button>
     </Column>
   );
 };
+
+export default Player;
