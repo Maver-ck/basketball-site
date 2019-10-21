@@ -7,6 +7,7 @@ body {
   /* background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Los_Angeles_Clippers_%282015%29.svg/200px-Los_Angeles_Clippers_%282015%29.svg.png"); */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-transform: capitalize;
 }
 
 code {
