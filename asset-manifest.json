@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/basketball-site/static/css/main.7e9fbd0e.chunk.css",
-    "main.js": "/basketball-site/static/js/main.63ea1ccc.chunk.js",
-    "main.js.map": "/basketball-site/static/js/main.63ea1ccc.chunk.js.map",
+    "main.js": "/basketball-site/static/js/main.fb358c43.chunk.js",
+    "main.js.map": "/basketball-site/static/js/main.fb358c43.chunk.js.map",
     "runtime~main.js": "/basketball-site/static/js/runtime~main.e81a1caa.js",
     "runtime~main.js.map": "/basketball-site/static/js/runtime~main.e81a1caa.js.map",
     "static/js/2.b3e625da.chunk.js": "/basketball-site/static/js/2.b3e625da.chunk.js",
     "static/js/2.b3e625da.chunk.js.map": "/basketball-site/static/js/2.b3e625da.chunk.js.map",
     "index.html": "/basketball-site/index.html",
-    "precache-manifest.84e4eef25f86b706aaac6baadd8f948b.js": "/basketball-site/precache-manifest.84e4eef25f86b706aaac6baadd8f948b.js",
+    "precache-manifest.f5fa7a0780fc52556c99e12b0646d970.js": "/basketball-site/precache-manifest.f5fa7a0780fc52556c99e12b0646d970.js",
     "service-worker.js": "/basketball-site/service-worker.js",
     "static/css/main.7e9fbd0e.chunk.css.map": "/basketball-site/static/css/main.7e9fbd0e.chunk.css.map",
     "static/media/bev.png": "/basketball-site/static/media/bev.841efddf.png",
