@@ -3,10 +3,6 @@ import { Row } from "simple-flexbox";
 import Player from "./components/Player";
 import teams from "./assets/objects/teams";
 
-const onPlayerClick = playerName => {
-  console.log(playerName);
-};
-
 const App = () => {
   const [team, setTeam] = useState(teams);
 
@@ -24,7 +20,6 @@ const App = () => {
                 playerPosition={player.position}
                 playerName={player.name}
                 playerImage={require(`./assets/images/${player.ref}.png`)}
-                onClick={onPlayerClick}
                 playerDesciption={player.description}
                 playerHeight={player.height}
                 playerAge={player.age}

@@ -11,14 +11,13 @@ const Player = props => {
         style={{ alignSelf: "center" }}
         src={props.playerImage}
         alt="Logo"
-        onClick={() => props.onClick(props.playerName)}
+        onClick={() => setPlayerExpanded(!playerExpanded)}
       />
       <div style={{ display: playerExpanded ? "block" : "none" }}>
         <div>Age: {props.playerAge}</div>
         <div>Height: {props.playerHeight}</div>
         <div>{props.playerDesciption}</div>
       </div>
-      <button onClick={() => setPlayerExpanded(!playerExpanded)}>Expand</button>
     </Column>
   );
 };
