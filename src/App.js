@@ -24,7 +24,7 @@ const App = () => {
                 playerPosition={player.position}
                 playerName={player.name}
                 playerImage={require(`./assets/images/${player.ref}.png`)}
-                onPlayerClick={onPlayerClick}
+                onClick={onPlayerClick}
                 playerDesciption={player.description}
                 playerHeight={player.height}
                 playerAge={player.age}
