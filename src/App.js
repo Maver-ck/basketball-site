@@ -14,12 +14,13 @@ const App = () => {
     <div className="App">
       <h1>Basket Ball</h1>
       <h2>LA Clippers</h2>
-      <div className="ARow">
+      <div>
         Starting Lineup
-        <Row>
+        <Row className="row">
           {team.map((player, index) => {
             return (
               <Player
+                key={index}
                 playerPosition={player.position}
                 playerName={player.name}
                 playerImage={require(`./assets/images/${player.ref}.png`)}

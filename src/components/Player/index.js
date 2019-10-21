@@ -4,7 +4,7 @@ import { Column } from "simple-flexbox";
 const Player = props => {
   const [playerExpanded, setPlayerExpanded] = useState(false);
   return (
-    <Column>
+    <Column className="player">
       <div>{props.playerPosition}</div>
       <div>{props.playerName}</div>
       <img
