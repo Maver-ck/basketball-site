@@ -14,7 +14,9 @@ const Player = props => {
       <div style={{ display: playerExpanded ? "block" : "none" }}>
         <div>Age: {props.playerAge}</div>
         <div>Height: {props.playerHeight}</div>
-        <div>{props.playerDesciption}</div>
+        <div>
+          <p>{props.playerDesciption}</p>
+        </div>
       </div>
     </Column>
   );
